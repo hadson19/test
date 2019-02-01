@@ -22,7 +22,8 @@ The above schema defines the following constraints:
     * format: `uri`
     * default: `https://www.dpd.co.uk/lp/app/index.html`
 
-* `banners`: array[]
+* `banners`:
+    * type: array
     * item: 
         * `image`:
           * one of the following: 
@@ -64,7 +65,7 @@ The above schema defines the following constraints:
     
 * `birthyear`
     * an integer between 1900 and 2013
-    * default: <details><summary>Array</summary>
+    * <details><summary>default</summary>
         ```ts
         [
           {
